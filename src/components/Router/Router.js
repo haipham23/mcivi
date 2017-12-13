@@ -7,7 +7,6 @@ import { compose } from 'recompose';
 
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import NotFound from '../NotFound/NotFound';
-import Footer from '../Footer/Footer';
 
 import Dashboard from '../Dashboard/Dashboard';
 
@@ -30,7 +29,6 @@ class Router extends PureComponent {
           <PrivateRoute path="/dashboard" isAuth={isAuth} component={Dashboard} />
           <Route component={NotFound} />
         </Switch>
-        <Footer />
       </div>
     );
   }

@@ -5,3 +5,23 @@ $font-size-md: 1.5em;
 $font-size-sm: 1.3em;
 
 $font-bold: 600;
+
+// Mixins
+// Bootstrap Button Variant
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@mixin body-font {
+  font-family: 'Open Sans', serif;
+}
+@mixin heading-font {
+  font-family: 'Saira Extra Condensed', serif;
+}
+
+
+// Page Variables
+
+$sidebar-base-width: 17rem;

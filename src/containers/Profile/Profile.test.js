@@ -1,30 +1,21 @@
 import React from 'react';
 import { expect } from 'chai';
-import { setTranslations } from 'redux-i18n';
 
 import Profile from './Profile';
 
-import { mountContainer, store } from '../../test/mount';
+import { mountContainer } from '../../test/mount';
 
-const loadedLang = {
-  en: {},
-  vi: {}
-};
-
-describe.only('Profile', () => {
+describe('Profile', () => {
   const wrapper = mountContainer(<Profile />);
 
-  it('should render Loader', () => {
-    expect(wrapper.find('.loader').length).to.equal(1);
-    expect(wrapper.find('.profile').length).to.equal(0);
-  });
-
-  it('should render Profile', () => {
-    store.dispatch(setTranslations(loadedLang));
-
-    wrapper.update();
-
-    expect(wrapper.find('.loader').length).to.equal(0);
+  it('should render', () => {
     expect(wrapper.find('.profile').length).to.equal(1);
+
+    expect(wrapper.find('ProfileNav').length).to.equal(1);
+    expect(wrapper.find('SectionAbout').length).to.equal(1);
+    expect(wrapper.find('SectionExperience').length).to.equal(1);
+    expect(wrapper.find('SectionEducation').length).to.equal(1);
+    expect(wrapper.find('SectionSkills').length).to.equal(1);
+    expect(wrapper.find('SectionInterest').length).to.equal(1);
   });
 });
