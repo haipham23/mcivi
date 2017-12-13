@@ -37,13 +37,10 @@ class SectionSkills extends PureComponent {
           </ul>
 
           <div className="subheading mb-3">{t('workflow')}</div>
-          <ul className="fa-ul mb-0">
+          <ul className="list-inline">
             {
               flows.map(flow => (
-                <li key={flow}>
-                  <i className="fa-li fa fa-check" />
-                  {t(`${flow}`)}
-                </li>
+                <span className="badge badge-default" key={flow}>{flow}</span>
               ))
             }
           </ul>

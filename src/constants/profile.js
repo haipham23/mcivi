@@ -45,10 +45,30 @@ const tools = [
 ];
 
 const flows = [
-  'flow1',
-  'flow2',
-  'flow3',
-  'flow4'
+  'Javascript',
+  'Nodejs',
+  'Express',
+  'SailsJs',
+  'Loopback',
+  'React',
+  'Angular',
+  'Mongodb',
+  'Redis',
+  'Bootstrap',
+  'FlatUI',
+  'Material Design',
+  'SaSS',
+  'Less',
+  'AWS',
+  'Heroku',
+  'Git',
+  'Docker',
+  'Travis',
+  'Openshift',
+  'Gulp',
+  'Webpack',
+  'CI',
+  'CD'
 ];
 
 

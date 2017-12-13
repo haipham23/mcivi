@@ -18,10 +18,7 @@ class SectionAbout extends PureComponent {
             </span>
           </h1>
           <div className="subheading mb-5">
-            {t('address')}&nbsp;·
-            &nbsp;{t('city')}&nbsp;·
-            &nbsp;{t('country')}&nbsp;·
-            &nbsp;{t('phone')}&nbsp;·&nbsp;
+            {t('address')}&nbsp;·&nbsp;{t('city')}&nbsp;·&nbsp;{t('country')}&nbsp;·&nbsp;{t('phone')}&nbsp;·&nbsp;
             <a href={`mailto:${t('email')}`}>
               {t('email')}
             </a>
