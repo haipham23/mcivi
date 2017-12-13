@@ -9,8 +9,10 @@ import configure, { history } from '../store/configure';
 
 Enzyme.configure({ adapter: new Adapter() });
 
+const store = configure();
+
 const mountContainer = container => mount(
-  <Provider store={configure()}>
+  <Provider store={store}>
     <I18n translations={{}} initialLang="en" useReducer>
       <ConnectedRouter history={history}>
         {container}
@@ -20,5 +22,6 @@ const mountContainer = container => mount(
 );
 
 export {
-  mountContainer
+  mountContainer,
+  store
 };
