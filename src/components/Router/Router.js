@@ -14,6 +14,7 @@ import Dashboard from '../Dashboard/Dashboard';
 import Home from '../../containers/Home/Home';
 import Supermarket from '../../containers/Supermarket/Supermarket';
 import Login from '../../containers/Login/Login';
+import Profile from '../../containers/Profile/Profile';
 
 class Router extends PureComponent {
   render() {
@@ -22,7 +23,8 @@ class Router extends PureComponent {
     return (
       <div>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Profile} />
+          <Route exact path="/about" component={Home} />
           <Route path="/super-market" component={Supermarket} />
           <Route path="/login" component={Login} />
           <PrivateRoute path="/dashboard" isAuth={isAuth} component={Dashboard} />
