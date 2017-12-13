@@ -9,7 +9,7 @@ import SectionAbout from './SectionAbout';
 import SectionExperience from './SectionExperience';
 import SectionEducation from './SectionEducation';
 import SectionSkills from './SectionSkills';
-import SectionInterest from './SectionInterest';
+import SectionProjects from './SectionProjects';
 
 import * as cons from '../../constants/profile';
 
@@ -26,7 +26,7 @@ class Profile extends Component {
           <SectionExperience t={t} experiences={cons.experiences} />
           <SectionEducation t={t} educations={cons.educations} />
           <SectionSkills t={t} skills={cons.skills} tools={cons.tools} flows={cons.flows} />
-          <SectionInterest t={t} />
+          <SectionProjects t={t} />
         </div>
       </div>
     );
