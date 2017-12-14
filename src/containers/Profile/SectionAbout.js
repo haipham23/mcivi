@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 import { func, arrayOf, string } from 'prop-types';
+import TypistLoop from 'react-typist-loop';
+import Typist from 'react-typist';
 
 class SectionAbout extends PureComponent {
   render() {
@@ -23,9 +25,31 @@ class SectionAbout extends PureComponent {
               {t('email')}
             </a>
           </div>
-          <p className="mb-5">
-            {t('about_me')}
-          </p>
+          <div className="mb-5 about-me">
+            {t('about_me_1')}
+            <TypistLoop interval={3000}>
+              {
+                [
+                  'full stack',
+                  'web',
+                  'javascript',
+                  'react'
+                ].map(text => (
+                  <Typist
+                    key={text}
+                    startDelay={500}
+                    delay={500}
+                    cursor={{ show: false }}
+                  >
+                    <span className="about-me--bold">
+                      {text}
+                    </span>
+                  </Typist>
+                ))
+              }
+            </TypistLoop>
+            {t('about_me_2')}
+          </div>
           <ul className="list-inline list-social-icons mb-0">
             {
               socials.map(social => (
