@@ -3,8 +3,6 @@ import { func } from 'prop-types';
 
 class SectionInterest extends PureComponent {
   render() {
-    const { t } = this.props;
-
     return (
       <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div className="my-auto">

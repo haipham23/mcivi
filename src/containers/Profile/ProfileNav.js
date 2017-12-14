@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { func, arrayOf, string } from 'prop-types';
+import scrollToElement from 'scroll-to-element';
 
 import haiProfile from '../../images/hai.jpg';
 
@@ -12,7 +13,7 @@ class ProfileNav extends PureComponent {
 
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a className="navbar-brand" href="#page-top">
+        <a className="navbar-brand">
           <span className="d-block d-lg-none" />
           <span className="d-none d-lg-block">
             <img
@@ -38,7 +39,14 @@ class ProfileNav extends PureComponent {
             {
               navs.map(item => (
                 <li className="nav-item" key={item}>
-                  <a className="nav-link" href={`#${item}`}>{t(`${item}`)}</a>
+                  <a
+                    className="nav-link"
+                    onClick={() => scrollToElement(`#${item}`)}
+                    role="link"
+                    tabIndex={0}
+                  >
+                    {t(`${item}`)}
+                  </a>
                 </li>
               ))
             }
