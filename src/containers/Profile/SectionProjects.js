@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react';
-import { func } from 'prop-types';
+// import { func } from 'prop-types';
 
 class SectionInterest extends PureComponent {
   render() {
     return (
-      <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="project">
         <div className="my-auto">
           <h2>
             Current Projects
@@ -41,9 +41,9 @@ class SectionInterest extends PureComponent {
   }
 }
 
-SectionInterest.propTypes = {
-  t: func.isRequired
-};
+// SectionInterest.propTypes = {
+//   t: func.isRequired
+// };
 
 export default SectionInterest;
 

@@ -11,11 +11,9 @@
   "vietnamese":"Tieng Viet",
   "firstName":"Hai",
   "lastName":"Pham",
-  "address":"3348D SM Jazz",
-  "city":"Makati",
-  "country":"Philippines",
   "phone":"(63) 949 801 8314",
   "email":"haipham23@gmail.com",
+  "skype":"haipham_23",
   "about_me_1":"Hello there, I'm a",
   "about_me_2":"developer.",
   "education":"Education",
@@ -49,7 +47,5 @@
   "facebook_url":"https://www.facebook.com/haipham23",
   "linkedin_url":"https://www.linkedin.com/in/haipham23/",
   "github_url":"https://github.com/haipham23",
-  "interest":"Interests",
-  "interest_p1":"Writing code to solve problems",
-  "interest_p2":"Reading"
+  "project":"Projects"
 }

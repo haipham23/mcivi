@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import I18n from 'redux-i18n';
 
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 import configure, { history } from './store/configure';
 import syncContent from './services/syncContent';
 
@@ -24,5 +24,5 @@ ReactDOM.render(
   </Provider>, document.getElementById('root')
 );
 
-registerServiceWorker();
+// registerServiceWorker();
 syncContent(store);

@@ -20,10 +20,11 @@ class SectionAbout extends PureComponent {
             </span>
           </h1>
           <div className="subheading mb-5">
-            {t('address')}&nbsp;·&nbsp;{t('city')}&nbsp;·&nbsp;{t('country')}&nbsp;·&nbsp;{t('phone')}&nbsp;·&nbsp;
-            <a href={`mailto:${t('email')}`}>
-              {t('email')}
-            </a>
+            <i className="fa fa-mobile" />{t('phone')}
+            <span className="dot">·</span>
+            <i className="fa fa-envelope" />{t('email')}
+            <span className="dot">·</span>
+            <i className="fa fa-skype" />{t('skype')}
           </div>
           <div className="mb-5 about-me">
             {t('about_me_1')}

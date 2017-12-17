@@ -3,7 +3,7 @@ const navs = [
   'experience',
   'education',
   'skills',
-  'interests'
+  'project'
 ];
 
 const socials = [
