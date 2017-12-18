@@ -68,7 +68,8 @@ const flows = [
   'Gulp',
   'Webpack',
   'CI',
-  'CD'
+  'CD',
+  'Microservices'
 ];
 
 
